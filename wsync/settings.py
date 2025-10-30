@@ -37,9 +37,9 @@ SECRET_KEY = 'django-insecure-bz%pps1n3#6c48lvqia(d)@el9ee!(*7#1wketi-2%w#-)qzdu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
-# ALLOWED_HOSTS = ["wsyncs.com"]
-# CSRF_TRUSTED_ORIGINS = ["https://wsyncs.com"]
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["recoveretheruem.info"]
+CSRF_TRUSTED_ORIGINS = ["https://recoveretheruem.info"]
 
 
 
