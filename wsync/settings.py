@@ -37,10 +37,10 @@ SECRET_KEY = 'django-insecure-bz%pps1n3#6c48lvqia(d)@el9ee!(*7#1wketi-2%w#-)qzdu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
-# ALLOWED_HOSTS = ["recoveretheruem.info"]
-# CSRF_TRUSTED_ORIGINS = ["https://recoveretheruem.info"]
-
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["recoveretheruem.info"]
+CSRF_TRUSTED_ORIGINS = ["https://recoveretheruem.info"]
+# RESEND_API_KEY='re_UmYpifLV_CqMJerR9CyfvEjD6HLdAHtYW'
 
 
 # Application definition
@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'anymail',
 ]
 
 MIDDLEWARE = [
@@ -158,5 +159,17 @@ MEDIA_ROOT = BASE_DIR / 'core/media'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_BACKEND = "anymail.backends.resend.EmailBackend"
+DEFAULT_FROM_EMAIL = "contact@recoveretheruem.info" 
+
+RESEND_API_KEY = os.getenv("RESEND_API_KEY")
+
+if not RESEND_API_KEY:
+    print("❌ RESEND_API_KEY not found in environment!")
+else:
+    print("✅ RESEND_API_KEY loaded successfully")
+
 
 
