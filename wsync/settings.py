@@ -40,7 +40,6 @@ DEBUG = False
 # ALLOWED_HOSTS = ["*"]
 ALLOWED_HOSTS = ["recoveretheruem.info"]
 CSRF_TRUSTED_ORIGINS = ["https://recoveretheruem.info"]
-# RESEND_API_KEY='re_UmYpifLV_CqMJerR9CyfvEjD6HLdAHtYW'
 
 
 # Application definition
